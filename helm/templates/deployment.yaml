@@ -23,5 +23,5 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: joindevops/mongodb:{{ .Values.deployment.imageVersion}}
+        image: "{{ .Values.deployment.imageURL}}:{{ .Values.deployment.imageVersion}}""
         imagePullPolicy: Always
